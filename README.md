@@ -20,4 +20,6 @@ For a root personal site at `https://ykawamura-gthb.github.io`, rename the repos
 
 ## Google Scholar metrics
 
-Google Scholar does not provide a standard public browser API for live citation and h-index widgets. This template uses editable values in `site-data.js`, which is the most reliable option for a static GitHub Pages site. A later version can add a scheduled GitHub Action to update these values automatically.
+Google Scholar does not provide a standard public browser API for live citation and h-index widgets. This site uses `scholar-stats.json` for the visible widget and keeps fallback values in `site-data.js`.
+
+The `.github/workflows/update-scholar-stats.yml` workflow refreshes these values daily and can also be run manually from the GitHub Actions tab.

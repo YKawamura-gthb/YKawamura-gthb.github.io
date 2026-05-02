@@ -7,6 +7,7 @@ window.SITE_DATA = {
   metrics: {
     citations: "331",
     hIndex: "10",
-    updated: "May 2026"
+    i10Index: "10",
+    updated: "May 2, 2026"
   }
 };

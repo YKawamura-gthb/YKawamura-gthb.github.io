@@ -14,6 +14,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   min-height: 100vh;
@@ -177,16 +181,41 @@ a {
   line-height: 1.15;
 }
 
+.flip-number {
+  display: inline-block;
+  min-width: 3ch;
+  transform-origin: 50% 70%;
+}
+
+.flip-number.is-flipping {
+  animation: metric-flip 180ms ease-out;
+}
+
+@keyframes metric-flip {
+  0% {
+    opacity: 0.35;
+    transform: rotateX(82deg) translateY(-2px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg) translateY(0);
+  }
+}
+
 .content-panel {
   min-width: 0;
   display: grid;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: auto;
   gap: 28px;
 }
 
 .topbar {
   display: flex;
   justify-content: flex-start;
+  position: sticky;
+  top: 24px;
+  z-index: 10;
 }
 
 .tabs {
@@ -222,9 +251,10 @@ a {
 }
 
 .tab-panel {
-  display: none;
-  max-width: 760px;
-  padding-bottom: 40px;
+  max-width: 860px;
+  min-height: calc(100vh - 96px);
+  padding: 12px 0 72px;
+  scroll-margin-top: 112px;
 }
 
 .tab-panel.is-active {
