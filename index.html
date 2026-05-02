@@ -52,8 +52,12 @@
       <main class="content-panel">
         <header class="topbar">
           <nav class="tabs" aria-label="Primary">
-            <button class="tab-button is-active" type="button" data-tab="about">About me</button>
-            <button class="tab-button" type="button" data-tab="research">Research</button>
+            <button class="tab-button is-active" id="about-tab" type="button" data-tab="about" aria-controls="about" aria-selected="true">
+              About me
+            </button>
+            <button class="tab-button" id="research-tab" type="button" data-tab="research" aria-controls="research" aria-selected="false">
+              Research
+            </button>
           </nav>
         </header>
 

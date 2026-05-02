@@ -29,6 +29,7 @@ document.querySelectorAll(".tab-button").forEach((button) => {
 
     document.querySelectorAll(".tab-button").forEach((tab) => {
       tab.classList.toggle("is-active", tab === button);
+      tab.setAttribute("aria-selected", String(tab === button));
     });
 
     document.querySelectorAll(".tab-panel").forEach((panel) => {
