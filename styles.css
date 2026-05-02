@@ -94,6 +94,9 @@ a {
 .role {
   margin: 8px 0 0;
   color: var(--muted);
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  hyphens: auto;
 }
 
 .profile-links {

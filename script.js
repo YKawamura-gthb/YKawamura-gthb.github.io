@@ -86,6 +86,70 @@ fetch("scholar-stats.json", { cache: "no-store" })
     applyMetrics(siteData.metrics, true);
   });
 
+function createPublicationTopic(topic, isOpen = false) {
+  const details = document.createElement("details");
+  details.className = "topic-card";
+  details.open = isOpen;
+
+  const summary = document.createElement("summary");
+  const text = document.createElement("span");
+  const title = document.createElement("strong");
+  const description = document.createElement("small");
+  const count = document.createElement("span");
+
+  title.textContent = topic.title;
+  description.textContent = topic.description;
+  count.className = "paper-count";
+  count.textContent = `${topic.papers.length} ${topic.papers.length === 1 ? "paper" : "papers"}`;
+
+  text.append(title, description);
+  summary.append(text, count);
+
+  const list = document.createElement("ol");
+  list.className = "publication-list";
+
+  topic.papers.forEach((paper) => {
+    const item = document.createElement("li");
+    const link = document.createElement("a");
+    const meta = document.createElement("span");
+
+    link.href = paper.url;
+    link.target = "_blank";
+    link.rel = "noreferrer";
+    link.textContent = paper.title;
+    meta.innerHTML = paper.citation.replace(/<(?!\/?strong\b)[^>]*>/g, "");
+
+    item.append(link, meta);
+    list.append(item);
+  });
+
+  details.append(summary, list);
+  return details;
+}
+
+function attachTopicHover() {
+  document.querySelectorAll(".topic-card").forEach((topic) => {
+    topic.addEventListener("mouseenter", () => {
+      if (window.matchMedia("(hover: hover)").matches) {
+        topic.open = true;
+      }
+    });
+  });
+}
+
+fetch("publications.json", { cache: "no-store" })
+  .then((response) => (response.ok ? response.json() : null))
+  .then((data) => {
+    const container = document.querySelector("#publication-topics");
+    if (!container || !data?.topics?.length) {
+      return;
+    }
+
+    container.replaceChildren(...data.topics.map((topic, index) => createPublicationTopic(topic, index === 0)));
+    attachTopicHover();
+  })
+  .catch(() => {});
+
 function activateTab(tabName) {
   document.querySelectorAll(".tab-button").forEach((tab) => {
     const isActive = tab.dataset.tab === tabName;
@@ -127,10 +191,4 @@ document.querySelectorAll(".tab-panel").forEach((panel) => {
   sectionObserver.observe(panel);
 });
 
-document.querySelectorAll(".topic-card").forEach((topic) => {
-  topic.addEventListener("mouseenter", () => {
-    if (window.matchMedia("(hover: hover)").matches) {
-      topic.open = true;
-    }
-  });
-});
+attachTopicHover();

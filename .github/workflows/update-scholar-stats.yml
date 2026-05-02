@@ -1,4 +1,4 @@
-name: Update Google Scholar stats
+name: Update Google Scholar data
 
 on:
   workflow_dispatch:
@@ -17,14 +17,15 @@ jobs:
         with:
           node-version: "20"
       - run: node tools/update-scholar-stats.js
-      - name: Commit updated stats
+      - run: node tools/update-publications.js
+      - name: Commit updated Scholar data
         run: |
-          if git diff --quiet -- scholar-stats.json site-data.js; then
-            echo "Scholar stats are already current."
+          if git diff --quiet -- scholar-stats.json publications.json site-data.js; then
+            echo "Scholar data is already current."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add scholar-stats.json site-data.js
-          git commit -m "Update Google Scholar stats"
+          git add scholar-stats.json publications.json site-data.js
+          git commit -m "Update Google Scholar data"
           git push

@@ -1,0 +1,164 @@
+{
+  "updated": "May 2, 2026",
+  "topics": [
+    {
+      "key": "stroke",
+      "title": "Stroke, neuroinflammation, and biomarkers",
+      "description": "Intracerebral hemorrhage, post-stroke seizures, immune signatures, and biofluid biomarkers.",
+      "papers": [
+        {
+          "title": "Biofluid Biomarkers of Ischaemic Penumbra in Acute Ischaemic Stroke: A Systematic Review and Meta-Analysis",
+          "citation": "<strong>Y. Kawamura</strong>, D. S. Liebeskind, S. Misra, E. I. Khan, et al. medRxiv, 2026.",
+          "year": "2026",
+          "url": "https://www.medrxiv.org/content/10.64898/2026.03.03.26347352.full.pdf"
+        },
+        {
+          "title": "Characterizing inflammatory biomarkers in post-stroke seizure risk and outcome prognostication",
+          "citation": "E. Y. Wang, S. Misra, J. Yan, P. Y. Chook, <strong>Y. Kawamura</strong>, et al. PLoS One, 2026.",
+          "year": "2026",
+          "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0345752"
+        },
+        {
+          "title": "Pharmacological strategies for preventing post-stroke seizures and epilepsy",
+          "citation": "<strong>Y. Kawamura</strong>, E. Trinka, T. J. Quinn, H. C. A. Emsley, et al. Frontiers in Neurology, 2026.",
+          "year": "2026",
+          "url": "https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2025.1709077/full"
+        },
+        {
+          "title": "Single-Cell Analysis of Microglia and Monocyte Dynamics Uncover Distinct TNF-alpha-driven Neuroimmune Signatures after Intracerebral Hemorrhage",
+          "citation": "<strong>Y. Kawamura</strong>, C. W. Johnson, J. DeLong, L. P. de Lima Camillo, et al. bioRxiv, 2026.",
+          "year": "2026",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13041951/"
+        },
+        {
+          "title": "DWI-Positive Lesions in Acute Intracerebral Hemorrhage and Their Correlation With Small Vessel Disease: A Cohort Study",
+          "citation": "S. Hosoki, T. Tanaka, <strong>Y. Kawamura</strong>, S. M. M. Bhaskar, et al. Neurology, 2025.",
+          "year": "2025",
+          "url": "https://www.neurology.org/doi/abs/10.1212/WNL.0000000000214338"
+        },
+        {
+          "title": "Prognostic biomarkers of intracerebral hemorrhage identified using targeted proteomics and machine learning algorithms",
+          "citation": "S. Misra, <strong>Y. Kawamura</strong>, P. Singh, S. Sengupta, et al. PLoS One, 2024.",
+          "year": "2024",
+          "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0296616"
+        },
+        {
+          "title": "Prognostication of Outcomes in Stroke Patients Using Inflammatory Biomarkers: Findings from the Yale Post-stroke Epilepsy Research Group",
+          "citation": "E. Wang, S. Misra, J. Yan, P. Y. Chook, <strong>Y. Kawamura</strong>, et al. Neurology, 2024.",
+          "year": "2024",
+          "url": "https://www.neurology.org/doi/abs/10.1212/WNL.0000000000204783"
+        },
+        {
+          "title": "Machine Learning in Action: Stroke Diagnosis and Outcome Prediction",
+          "citation": "V. Abedi, <strong>Y. Kawamura</strong>, J. Li, T. G. Phan, R. Zand. Frontiers in Neurology, 2022.",
+          "year": "2022",
+          "url": "https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2022.984467/full"
+        }
+      ]
+    },
+    {
+      "key": "ai",
+      "title": "Clinical AI and machine learning",
+      "description": "Time-series modelling, clinical prediction, implementation barriers, and decision support.",
+      "papers": [
+        {
+          "title": "Trajectory flow matching with applications to clinical time series modelling",
+          "citation": "X. N. Zhang, Y. Pu, <strong>Y. Kawamura</strong>, A. Loza, Y. Bengio, D. Shung, A. Tong. NeurIPS, 2024.",
+          "year": "2024",
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/c1e67cde895c3c91edb43569ad0df260-Abstract-Conference.html"
+        },
+        {
+          "title": "Validation of an Electronic Health Record-Based Machine Learning Model Compared With Clinical Risk Scores for Gastrointestinal Bleeding",
+          "citation": "D. L. Shung, C. E. Chan, K. You, S. Nakamura, T. Saarinen, et al. Gastroenterology, 2024.",
+          "year": "2024",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0016508524051837"
+        },
+        {
+          "title": "Many Models, Little Adoption: What Accounts for Low Uptake of Machine Learning Models for Atrial Fibrillation Prediction and Detection?",
+          "citation": "<strong>Y. Kawamura</strong>, A. Vafaei Sadr, V. Abedi, R. Zand. Journal of Clinical Medicine, 2024.",
+          "year": "2024",
+          "url": "https://www.mdpi.com/2077-0383/13/5/1313"
+        },
+        {
+          "title": "Translating AI to the Bedside with Physician Buy-In: Recommendations from a Meta-Analysis and Systematic Review of the Literature",
+          "citation": "G. Hwang, S. S. Hejazian, A. Vafaei Sadr, J. K. Wagner, P. Hao, et al. Bioengineering, 2025.",
+          "year": "2025",
+          "url": "https://www.mdpi.com/2306-5354/12/12/1363"
+        }
+      ]
+    },
+    {
+      "key": "vascular",
+      "title": "Vascular biomechanics, aortopathy, and mechanobiology",
+      "description": "Aortic remodeling, mechanosensing, progeria, Marfan syndrome, and arterial mechanics.",
+      "papers": [
+        {
+          "title": "Developmental origins of mechanical homeostasis in the aorta",
+          "citation": "S.-I. Murtada, <strong>Y. Kawamura</strong>, G. Li, M. A. Schwartz, G. Tellides, J. D. Humphrey. Developmental Dynamics, 2021.",
+          "year": "2021",
+          "url": "https://anatomypubs.onlinelibrary.wiley.com/doi/abs/10.1002/dvdy.283"
+        },
+        {
+          "title": "Paradoxical aortic stiffening and subsequent cardiac dysfunction in Hutchinson-Gilford progeria syndrome",
+          "citation": "S.-I. Murtada, <strong>Y. Kawamura</strong>, A. W. Caulk, H. Ahmadzadeh, et al. Journal of the Royal Society Interface, 2020.",
+          "year": "2020",
+          "url": "https://royalsocietypublishing.org/rsif/article/17/166/20200066/35989"
+        },
+        {
+          "title": "Effects of Age, Sex, and Extracellular Matrix Integrity on Aortic Dilatation and Rupture in a Mouse Model of Marfan Syndrome",
+          "citation": "D. Weiss, B. V. Rego, C. Cavinato, D. S. Li, <strong>Y. Kawamura</strong>, et al. Arteriosclerosis, Thrombosis, and Vascular Biology, 2023.",
+          "year": "2023",
+          "url": "https://www.ahajournals.org/doi/abs/10.1161/ATVBAHA.123.319122"
+        },
+        {
+          "title": "Quantitative not qualitative histology differentiates aneurysmal from nondilated ascending aortas and reveals a net gain of medial components",
+          "citation": "S. Yousef, N. Matsumoto, I. Dabe, M. Mori, A. B. Landry, et al. Scientific Reports, 2021.",
+          "year": "2021",
+          "url": "https://www.nature.com/articles/s41598-021-92659-1"
+        },
+        {
+          "title": "Lonafarnib improves cardiovascular function and survival in a mouse model of Hutchinson-Gilford Progeria Syndrome",
+          "citation": "S.-I. Murtada, N. Mikush, M. Wang, P. Ren, <strong>Y. Kawamura</strong>, et al. eLife, 2023.",
+          "year": "2023",
+          "url": "https://elifesciences.org/articles/82728"
+        },
+        {
+          "title": "Differential biomechanical responses of elastic and muscular arteries to angiotensin II-induced hypertension",
+          "citation": "S.-I. Murtada, <strong>Y. Kawamura</strong>, D. Weiss, J. D. Humphrey. Journal of Biomechanics, 2021.",
+          "year": "2021",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0021929021000774"
+        },
+        {
+          "title": "Adventitial remodeling protects against aortic rupture following late smooth muscle-specific disruption of TGF-beta signaling",
+          "citation": "<strong>Y. Kawamura</strong>, S.-I. Murtada, F. Gao, X. Liu, G. Tellides, J. D. Humphrey. Journal of the Mechanical Behavior of Biomedical Materials, 2021.",
+          "year": "2021",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1751616120308018"
+        },
+        {
+          "title": "Smooth muscle alpha-v integrins regulate vascular fibrosis via CD109 downregulation of TGF-beta signalling",
+          "citation": "Z. Li, E. Belozertseva, A. Parlakian, R. Bascetin, H. Louis, <strong>Y. Kawamura</strong>, et al. European Heart Journal Open, 2023.",
+          "year": "2023",
+          "url": "https://academic.oup.com/ehjopen/article-abstract/3/2/oead010/7043129"
+        },
+        {
+          "title": "Biomechanical and transcriptional evidence that smooth muscle cell death drives an osteochondrogenic phenotype and severe proximal vascular disease in progeria",
+          "citation": "S.-I. Murtada, <strong>Y. Kawamura</strong>, C. Cavinato, M. Wang, A. B. Ramachandra, et al. Biomechanics and Modeling in Mechanobiology, 2023.",
+          "year": "2023",
+          "url": "https://link.springer.com/article/10.1007/s10237-023-01722-5"
+        },
+        {
+          "title": "Focal Adhesion Kinase Drives Rho/ROCK and mTOR Signaling to Protect and Augment Aortic Dissections",
+          "citation": "Z. Zhou, P. Guan, R. Sarkar, Y. Yu, A. Richard, D. Weiss, <strong>Y. Kawamura</strong>, et al. JACC: Basic to Translational Science, 2025.",
+          "year": "2025",
+          "url": "https://www.jacc.org/doi/abs/10.1016/j.jacbts.2025.101353"
+        },
+        {
+          "title": "Aortic Smooth Muscle Cell Focal Adhesion Kinase Activation is Associated With Acute Aortic Dissections",
+          "citation": "Z. Zhou, Y. Li, C. Zhang, H. G. Vasquez, <strong>Y. Kawamura</strong>, et al. Circulation, 2021.",
+          "year": "2021",
+          "url": "https://www.ahajournals.org/doi/abs/10.1161/circ.144.suppl_1.12566"
+        }
+      ]
+    }
+  ]
+}
