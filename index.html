@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Academic website">
+    <title>Your Name | Academic Website</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <aside class="profile-sidebar" aria-label="Profile">
+        <div class="photo-frame">
+          <img src="assets/profile-photo.jpg" alt="Portrait of Your Name" onerror="this.hidden=true; this.nextElementSibling.hidden=false;">
+          <div class="photo-placeholder" hidden>YN</div>
+        </div>
+
+        <div class="identity">
+          <h1>Your Name</h1>
+          <p class="role">Your academic title or affiliation</p>
+        </div>
+
+        <nav class="profile-links" aria-label="Academic profiles">
+          <a href="https://orcid.org/0000-0000-0000-0000" target="_blank" rel="noreferrer">
+            <span class="link-mark">iD</span>
+            ORCID
+          </a>
+          <a href="https://scholar.google.com/" target="_blank" rel="noreferrer">
+            <span class="link-mark">G</span>
+            Google Scholar
+          </a>
+        </nav>
+
+        <section class="metrics-widget" aria-labelledby="metrics-title">
+          <div>
+            <h2 id="metrics-title">Google Scholar</h2>
+            <p>Updated <span id="metrics-updated">manually</span></p>
+          </div>
+          <dl>
+            <div>
+              <dt>Citations</dt>
+              <dd id="metric-citations">--</dd>
+            </div>
+            <div>
+              <dt>h-index</dt>
+              <dd id="metric-hindex">--</dd>
+            </div>
+          </dl>
+        </section>
+      </aside>
+
+      <main class="content-panel">
+        <header class="topbar">
+          <nav class="tabs" aria-label="Primary">
+            <button class="tab-button is-active" type="button" data-tab="about">About me</button>
+            <button class="tab-button" type="button" data-tab="research">Research</button>
+          </nav>
+        </header>
+
+        <section class="tab-panel is-active" id="about" aria-labelledby="about-tab">
+          <p class="kicker">About me</p>
+          <h2>Short academic biography</h2>
+          <div class="rich-text">
+            <p>
+              Replace this paragraph with your About me text. A good academic homepage introduction usually states your
+              current role, institution, research area, and the questions that motivate your work.
+            </p>
+            <p>
+              You can also mention teaching, methods, collaborations, or selected professional activities here.
+            </p>
+          </div>
+        </section>
+
+        <section class="tab-panel" id="research" aria-labelledby="research-tab">
+          <p class="kicker">Research</p>
+          <h2>Research interests and projects</h2>
+          <div class="rich-text">
+            <p>
+              Replace this section with your Research text. You might describe your main research themes, current
+              projects, publications, datasets, or software.
+            </p>
+            <ul>
+              <li><strong>Theme one:</strong> Add a concise description of a research strand.</li>
+              <li><strong>Theme two:</strong> Add another strand, project, or collaboration.</li>
+              <li><strong>Selected work:</strong> Link to papers, preprints, or project pages.</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="site-data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
