@@ -1,12 +1,12 @@
 window.SITE_DATA = {
-  name: "Your Name",
-  initials: "YN",
-  role: "Your academic title or affiliation",
-  orcidUrl: "https://orcid.org/0000-0000-0000-0000",
-  googleScholarUrl: "https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID",
+  name: "Yuki Kawamura",
+  initials: "YK",
+  role: "University of Cambridge",
+  orcidUrl: "https://orcid.org/0000-0003-2137-6464",
+  googleScholarUrl: "https://scholar.google.co.jp/citations?user=TOmnEFgAAAAJ&hl=en",
   metrics: {
-    citations: "--",
-    hIndex: "--",
-    updated: "manually"
+    citations: "331",
+    hIndex: "10",
+    updated: "May 2026"
   }
 };

@@ -37,3 +37,11 @@ document.querySelectorAll(".tab-button").forEach((button) => {
     });
   });
 });
+
+document.querySelectorAll(".topic-card").forEach((topic) => {
+  topic.addEventListener("mouseenter", () => {
+    if (window.matchMedia("(hover: hover)").matches) {
+      topic.open = true;
+    }
+  });
+});
