@@ -10,13 +10,11 @@ A small static academic website ready for GitHub Pages.
 
 ## Publish on GitHub Pages
 
-This repository can be published through GitHub Pages from **Settings > Pages** using the main branch root.
+This repository is named `YKawamura-gthb.github.io`, so GitHub Pages can publish it as the root personal site:
 
-Because the repository is named `yuki-kawamura`, the project site URL will usually be:
+`https://ykawamura-gthb.github.io`
 
-`https://ykawamura-gthb.github.io/yuki-kawamura/`
-
-For a root personal site at `https://ykawamura-gthb.github.io`, rename the repository to `YKawamura-gthb.github.io`.
+In GitHub, go to **Settings > Pages** and publish from the `main` branch root if Pages is not already enabled.
 
 ## Google Scholar metrics
 
