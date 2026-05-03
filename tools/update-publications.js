@@ -109,21 +109,6 @@ function citationFor(paper) {
   return boldAuthorName(`${paper.authors}. ${paper.venue}${year}.`.replace(/\s+/g, " "));
 }
 
-function dedupe(papers) {
-  const byTitle = new Map();
-
-  papers.forEach((paper) => {
-    const key = paper.title.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
-    const existing = byTitle.get(key);
-
-    if (!existing || Number(paper.year || 0) > Number(existing.year || 0) || paper.url.includes("pmc.ncbi.nlm.nih.gov")) {
-      byTitle.set(key, paper);
-    }
-  });
-
-  return [...byTitle.values()].sort((a, b) => Number(b.year || 0) - Number(a.year || 0) || a.title.localeCompare(b.title));
-}
-
 async function fetchText(url) {
   let response;
 
@@ -170,16 +155,16 @@ async function main() {
   const rows = parseRows(html).filter((paper) => paper.title && !hasJapaneseText(paper.title));
   const papers = [];
 
-  for (const row of rows.filter((paper) => paper.scholarUrl && !hasJapaneseText(paper.authors) && !hasJapaneseText(paper.venue))) {
+  for (const row of rows.filter((paper) => (paper.scholarUrl || paper.detailUrl) && !hasJapaneseText(paper.authors) && !hasJapaneseText(paper.venue))) {
     papers.push({
       title: row.title,
       citation: citationFor(row),
       year: row.year,
-      url: row.scholarUrl
+      url: row.scholarUrl || row.detailUrl
     });
   }
 
-  dedupe(papers).forEach((paper) => {
+  papers.sort((a, b) => Number(b.year || 0) - Number(a.year || 0) || a.title.localeCompare(b.title)).forEach((paper) => {
     const topic = topics.find((candidate) => candidate.key === classifyPaper(paper));
     topic.papers.push(paper);
   });
