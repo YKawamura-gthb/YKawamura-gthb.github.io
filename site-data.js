@@ -8,6 +8,6 @@ window.SITE_DATA = {
     citations: "332",
     hIndex: "10",
     i10Index: "10",
-    updated: "May 5, 2026"
+    updated: "May 6, 2026"
   }
 };
