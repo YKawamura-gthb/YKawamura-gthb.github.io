@@ -16,8 +16,8 @@ This repository is named `YKawamura-gthb.github.io`, so GitHub Pages can publish
 
 In GitHub, go to **Settings > Pages** and publish from the `main` branch root if Pages is not already enabled.
 
-## Manual updates
+## Updates
 
-Google Scholar metrics are edited manually in `site-data.js`.
+Google Scholar metrics are refreshed daily by `.github/workflows/update-scholar-stats.yml`. The workflow updates only the sidebar stats in `site-data.js` and `index.html`.
 
 The Research bibliography is edited manually in `index.html`.
