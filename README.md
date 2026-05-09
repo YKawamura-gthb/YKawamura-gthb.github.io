@@ -16,10 +16,8 @@ This repository is named `YKawamura-gthb.github.io`, so GitHub Pages can publish
 
 In GitHub, go to **Settings > Pages** and publish from the `main` branch root if Pages is not already enabled.
 
-## Google Scholar metrics
+## Manual updates
 
-Google Scholar does not provide a standard public browser API for live citation and h-index widgets. This site uses `scholar-stats.json` for the visible widget, `publications.json` for the Research bibliography, and keeps fallback values in `site-data.js`.
+Google Scholar metrics are edited manually in `site-data.js`.
 
-The `.github/workflows/update-scholar-stats.yml` workflow refreshes these values and the publication list daily. It can also be run manually from the GitHub Actions tab.
-
-Google Scholar may occasionally rate-limit automated requests. If that happens, the publication updater keeps the existing `publications.json` rather than replacing it with incomplete data. For the most reliable long-term publication automation, use ORCID or another API-friendly source as the canonical bibliography feed.
+The Research bibliography is edited manually in `index.html`.
