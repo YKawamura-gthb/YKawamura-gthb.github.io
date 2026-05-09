@@ -5,9 +5,9 @@ window.SITE_DATA = {
   orcidUrl: "https://orcid.org/0000-0003-2137-6464",
   googleScholarUrl: "https://scholar.google.co.jp/citations?user=TOmnEFgAAAAJ&hl=en",
   metrics: {
-    citations: "331",
+    citations: "332",
     hIndex: "10",
     i10Index: "10",
-    updated: "May 3, 2026"
+    updated: "May 7, 2026"
   }
 };
