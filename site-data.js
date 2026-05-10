@@ -4,10 +4,4 @@ window.SITE_DATA = {
   role: "Ezoe Memorial Foundation Scholar, University of Cambridge",
   orcidUrl: "https://orcid.org/0000-0003-2137-6464",
   googleScholarUrl: "https://scholar.google.co.jp/citations?user=TOmnEFgAAAAJ&hl=en",
-  metrics: {
-    citations: "335",
-    hIndex: "10",
-    i10Index: "10",
-    updated: "May 9, 2026"
-  }
 };
